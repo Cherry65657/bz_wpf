@@ -1,0 +1,22 @@
+﻿<Window x:Class="bz_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bz_wpf" xmlns:wf="clr-namespace:wmp;assembly=wmp"
+        xmlns:iad ="clr-namespace:Microsoft.DwayneNeed.Interop;assembly=Microsoft.DwayneNeed"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920" WindowStyle="None" WindowState="Maximized" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid Height="1080" Width="1920" >
+        <MediaElement x:Name="me" Height="1080" Margin="0,0,0,0" VerticalAlignment="Top" Width="1920" Panel.ZIndex="-1" Volume="1" MediaEnded="me_MediaEnded"/>
+        <Popup x:Name="mune"  Width="200" Height="1080" Panel.ZIndex="3" PopupAnimation="Fade"  VerticalAlignment="Center" Placement="Right" PlacementTarget="{Binding ElementName=btn}" Opacity="0.2" AllowsTransparency="True" Opened="mune_Opened" Closed="mune_Closed">
+            <StackPanel Width="200" Height="1080" Background="#FFE6E6E6">
+                <Button x:Name="p_btn" Width="80" Height="50" Click="p_btn_Click">心中人</Button>
+                <Button x:Name="p_btn1" Width="80" Height="50" Click="p_btn1_Click">心中人</Button>
+            </StackPanel>
+        </Popup>
+        <Button x:Name="btn"  Width="10" Height="100" Panel.ZIndex="2" Margin="1910,0,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Click="btn_Click" />
+    </Grid>
+
+
+</Window>

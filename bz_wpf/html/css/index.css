@@ -1,0 +1,137 @@
+*{
+    margin: auto 0px;
+    padding: 0px;
+    font-family: Microsoft YaHei UI;
+    list-style-type: none;
+    font-style: normal;
+}
+html {
+    width: 1920px;
+    height: 1079px;
+    /* border: 1px solid pink; */
+    animation: ease-in-out rgb 2000ms infinite alternate;
+}
+
+@keyframes rgb {
+    0% {
+
+        box-shadow: inset 0px 0px 2px white;
+    }
+    100% {
+        box-shadow: inset 0px 0px 100px pink;
+    }
+}
+
+#time {
+   width: 500px;
+   height: 150px;
+   /* border: 1px solid pink; */
+   border-radius: 20px;
+   /* box-shadow: 0px 0px 70px pink; */
+   margin-top: 100px;
+   margin-left: 1300px;
+
+
+}
+#time .h,#time .m,#time .s {
+    width: 150px;
+    height: 150px;
+    font-size: 120px;
+    text-align: center;
+    color: pink;
+    margin-left: 5px;
+    float: left;
+}
+/* #time .h{
+    margin-left: px;
+}
+#time .m{
+    margin-left: 5px;
+}
+#time .s{
+    margin-left: 10px;
+    margin-right: 5px;
+} */
+#time .d1,#time .d2{
+    width:10px;
+    height:150px;
+    float: left;
+    display: block;
+}
+.d1 .s1,.d1 .s2{
+    width: 10px;
+    height: 10px;
+    background-color: pink;
+}
+.d2 .s3,.d2 .s4{
+    width: 10px;
+    height: 10px;
+    background-color: pink;
+}
+.d1 .s1,.d2 .s3{
+    margin-top: 50px;
+}
+.d1 .s2,.d2 .s4{
+    margin-top: 30px;
+}
+#time .d_active{
+    display: none;
+}   
+#canvas {
+    width: 1000px;
+    height: 500px;
+    border: 1px solid skyblue;
+    /* margin-top: 100px; */
+}
+#songplay{
+    width:600px;
+    height: 150px;
+    /* position: absolute;
+    top:-120px;
+    left: 500px;
+     */
+    
+}
+.play{
+    width: 100px;
+    height: 70px;
+    float: left;
+    margin-right: 0px;
+}
+.song_name{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    color: pink;
+    white-space:nowrap;
+    text-align: center;
+}
+.scrollbar-hover{
+    margin-top:72px;
+    height: 500px;
+    width: 300px;
+    float: right;
+}
+.scrollbar-hover ul li {
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis; 
+    color: pink;
+    text-align: center;
+    cursor:pointer;
+}
+.li_active{
+    border-left: 3px solid pink;
+    font-weight: bold;
+}
+.pl_active{
+    display: block;
+}
+
+
+
